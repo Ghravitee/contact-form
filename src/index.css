@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Green-200-Lighter: hsl(148, 38%, 91%);
+  --Green-600-Medium: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --Grey-500-Medium: hsl(186, 15%, 59%);
+  --Grey-900-Darker: hsl(187, 24%, 22%);
+}
+
+.karla-400 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-700 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
