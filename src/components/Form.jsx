@@ -64,7 +64,7 @@ const Form = () => {
   return (
     <>
       <SuccessMessage message={successMessage} />
-      <div className="p-6 lg:px-10 bg-white rounded-lg karla-400 max-w-[60rem] mx-auto">
+      <div className="px-6 py-8 lg:px-10 bg-white rounded-lg karla-400 max-w-[50rem] mx-auto">
         <h2 className="text-3xl font-bold text-left text-Grey-900-Darker mb-6">
           Contact Us
         </h2>
@@ -127,7 +127,7 @@ const Form = () => {
               Query Type <span className="text-Green-600-Medium">*</span>
             </label>
             <div className="flex flex-col md:flex-row gap-y-4 gap-x-6">
-              <label
+              <div
                 className={`flex items-center p-3 border gap-2 w-full ${
                   formData.queryType === "general"
                     ? "border-Green-600-Medium"
@@ -160,8 +160,8 @@ const Form = () => {
                   />
                 </div>
                 General Enquiry
-              </label>
-              <label
+              </div>
+              <div
                 className={`flex items-center p-3 border gap-2 w-full ${
                   formData.type === "support"
                     ? "border-Green-600-Medium"
@@ -194,7 +194,7 @@ const Form = () => {
                   />
                 </div>
                 Support Request
-              </label>
+              </div>
             </div>
             {formErrors.queryType && (
               <p className="text-red-500 text-sm">{formErrors.queryType}</p>
